@@ -65,6 +65,24 @@
    });
 
 
+   function up(i) {
+     return i++;
+   }
+
+var  a = up(20);
+console.log("sayi = " + a);
+
+
+function down(j) {
+  return j--;
+}
+
+var b=down(10);
+console.log("rakam =" + b);
+
+
+
+
    // listen (start app with node server.js) ======================================
    app.listen(8080);
    console.log("App listening on port 8080");
