@@ -21,6 +21,15 @@
    app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
    app.use(methodOverride());
 
+   function up(i) {
+     return i++;
+   }
+
+
+
+var  a = up(20);
+console.log("sayi = " + a);
+
    // listen (start app with node server.js) ======================================
    app.listen(8080);
    console.log("App listening on port 8080");
